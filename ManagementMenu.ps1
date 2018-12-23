@@ -28,7 +28,7 @@ Function mainMenu {
 	}
 	# Add the advanced menu option as the last choice
 	Write-Host `t$(($mmFiles | measure).count +1)". Advanced Menu"`n -foregroundcolor red
-	# Promt for a choice 
+	# Prompt for a choice 
 	Write-Host "Please enter a number... " -nonewline
 
 	$choice = Read-Host
@@ -57,7 +57,7 @@ Function advancedMenu {
 	}
 	# Add the Main Menu option as the last choice
 	Write-Host `t$(($advFiles | measure).count +1)". Main Menu"`n -foregroundcolor blue
-	# Promt for a choice 
+	# Prompt for a choice 
 	Write-Host "Please enter a number... " -nonewline 
 
 	$choice = Read-Host
