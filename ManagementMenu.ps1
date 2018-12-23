@@ -11,9 +11,9 @@ $title = "Helpdesk Menu"
 
 $scripts = Split-Path -parent $PSCommandPath
 # Path to subfolder which contains scripts to go under the "Main Menu"
-[array]$mmFiles = get-childItem $scripts\MainMenu | ? {($_.name -like "*.ps1") -and (-not($_.basename -like "*test*"))}
+[array]$mmFiles = get-childItem $scripts\MainMenu | where {($_.name -like "*.ps1") -and (-not($_.basename -like "*test*"))}
 # Path to subfolder which contains scripts to go under the "Advanced Menu" - less used, or more resource intensive scripts
-[array]$advFiles = get-childItem $scripts\AdvancedMenu | ? {($_.name -like "*.ps1") -and (-not($_.basename -like "*test*"))}
+[array]$advFiles = get-childItem $scripts\AdvancedMenu | where {($_.name -like "*.ps1") -and (-not($_.basename -like "*test*"))}
 
 # The main menu - most frequently used scripts
 Function mainMenu {
