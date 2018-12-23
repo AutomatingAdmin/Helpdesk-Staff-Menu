@@ -1,3 +1,4 @@
+```powershell
 cls
 $Host.UI.RawUI.BackgroundColor = ($bckgrnd = 'Black')
 $Host.PrivateData.ErrorBackgroundColor = $bckgrnd
@@ -75,3 +76,4 @@ Function advancedMenu {
 
 # Call the main menu
 mainMenu
+```
