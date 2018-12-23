@@ -1,7 +1,7 @@
 # Helpdesk Staff Menu
 Dynamic menu system for PowerShell scripts used by helpdesk staff. <br />
 This provides a default main menu for your most frequently used scripts. <br />
-There is alsoa choice for an advanced menu, useful for sxcripts that are used less often or are resource intensive.<br />
+There is also a choice for an advanced menu, useful for scripts that are used less often or are resource intensive.<br />
 <br />
 
 ### INSTALLATION
