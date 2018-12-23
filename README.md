@@ -6,7 +6,7 @@ There is also a choice for an advanced menu, useful for scripts that are used le
 
 ![Helpdesk Menu Example](https://github.com/AutomatingAdmin/Helpdesk-Staff-Menu/blob/master/Helpdesk%20Menu%20Screenshot.PNG?raw=true)
 
-### INSTALLATION ###
+## INSTALLATION
 Create this script in a folder accessible to all those who need to use it. <br />
 Within the folder create 2 more folders: `MainMenu` and `Advanced`. <br />
 Copy or create all .ps1 files youd like to be accessible through this menu in either of the subfolders you created. <br />
