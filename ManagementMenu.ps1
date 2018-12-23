@@ -1,4 +1,4 @@
-cls
+Clear-Host
 $Host.UI.RawUI.BackgroundColor = ($bckgrnd = 'Black')
 $Host.PrivateData.ErrorBackgroundColor = $bckgrnd
 $Host.PrivateData.WarningBackgroundColor = $bckgrnd
@@ -11,13 +11,13 @@ $title = "Helpdesk Menu"
 
 $scripts = Split-Path -parent $PSCommandPath
 # Path to subfolder which contains scripts to go under the "Main Menu"
-$mmFiles = get-childItem $scripts\MainMenu | ? {($_.name -like "*.ps1") -and (-not($_.basename -like "*test*"))}
+[array]$mmFiles = get-childItem $scripts\MainMenu | ? {($_.name -like "*.ps1") -and (-not($_.basename -like "*test*"))}
 # Path to subfolder which contains scripts to go under the "Advanced Menu" - less used, or more resource intensive scripts
-$advFiles = get-childItem $scripts\AdvancedMenu | ? {($_.name -like "*.ps1") -and (-not($_.basename -like "*test*"))}
+[array]$advFiles = get-childItem $scripts\AdvancedMenu | ? {($_.name -like "*.ps1") -and (-not($_.basename -like "*test*"))}
 
 # The main menu - most frequently used scripts
 Function mainMenu {
-	cls
+	Clear-Host
 	# Main Menu Header
 	Write-Host `n`t -backgroundcolor $bckgrnd -nonewline
 	Write-Host "------------------------ $title ------------------------"`n -foregroundcolor green -backgroundcolor darkgray
@@ -44,7 +44,7 @@ Function mainMenu {
 }
 
 Function advancedMenu {
-	cls
+	Clear-Host
 	# Advanced Menu Header
 	Write-Host `n`t -backgroundcolor $bckgrnd -nonewline
 	Write-Host "------------------------ $title ------------------------" -foregroundcolor green -backgroundcolor darkgray
