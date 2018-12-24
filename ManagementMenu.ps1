@@ -69,7 +69,7 @@ Function advancedMenu {
 	}
 	Else {
 		Write-Host `n`t"No scripts in the advanced folder"
-		# Prompt for a choice 
+		# Prompt to return
 		Write-Host `n"Press Enter to return to the Main Menu or any other key to cancel" -foregroundcolor cyan 
 		If (($Host.UI.RawUI.ReadKey()).VirtualKeyCode -eq 13){
 			mainMenu
