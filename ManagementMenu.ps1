@@ -31,7 +31,8 @@ Function mainMenu {
 			$choice = Read-Host "Enter a number...Or else"
 		}
 		if (1..(($mmFiles | measure).count) -contains $choice){
-			& ("$scripts\MainMenu\"+$mmFiles[[int]$choice-1].name) ### Run the chosen script
+			# Run the chosen script
+			& ("$scripts\MainMenu\"+$mmFiles[[int]$choice-1].name) 
 		}
 		elseif ($choice -eq ($mmFiles | measure).count +1){
 			advancedMenu
@@ -61,7 +62,8 @@ Function advancedMenu {
 			$choice = Read-Host "Enter a number...Or else"
 		}
 		if (1..(($advFiles | measure).count) -contains $choice){
-			& ("$scripts\AdvancedMenu\"+$advFiles[[int]$choice-1].name) ### Run the chosen script
+			# Run the chosen script
+			& ("$scripts\AdvancedMenu\"+$advFiles[[int]$choice-1].name)
 		}
 		elseif ($choice -eq ($advFiles | measure).count +1){
 			mainMenu
