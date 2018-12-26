@@ -5,7 +5,7 @@ $title = " Helpdesk Menu "
 # Advanced menu title
 $advTitle = " Advanced Menu "
 
-# Main meanu header
+# Main menu header, centered between 50 dashes
 $mmHeader = "-"*25 + $title + "-"*25
 
 # Create the advanced menu header to match width of main menu header
