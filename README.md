@@ -7,7 +7,7 @@ There is also a choice for an advanced menu, useful for scripts that are used le
 ![Main Menu Example](https://github.com/AutomatingAdmin/Helpdesk-Staff-Menu/blob/master/screenshots/Main%20Menu%20Screenshot.png?raw=true)
 <br />
 ##### Advanced menu example
-![Advanced Menu Example](https://github.com/AutomatingAdmin/Helpdesk-Staff-Menu/blob/master/Advanced%20Menu%20Screenshot.png?raw=true)
+![Advanced Menu Example](https://github.com/AutomatingAdmin/Helpdesk-Staff-Menu/blob/master/screenshots/Advanced%20Menu%20Screenshot.png?raw=true)
 
 ## INSTALLATION
 Create this script in a folder accessible to all those who need to use it. <br />
