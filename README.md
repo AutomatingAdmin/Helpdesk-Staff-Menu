@@ -4,7 +4,9 @@ This provides a default main menu for your most frequently used scripts. <br />
 There is also a choice for an advanced menu, useful for scripts that are used less often or are resource intensive.<br />
 <br />
 
-![Helpdesk Menu Example](https://github.com/AutomatingAdmin/Helpdesk-Staff-Menu/blob/master/Helpdesk%20Menu%20Screenshot.png?raw=true)
+![Main Menu Example](https://github.com/AutomatingAdmin/Helpdesk-Staff-Menu/blob/master/Main%20Menu%20Screenshot.png?raw=true)
+<br />
+![Advanced Menu Example](https://github.com/AutomatingAdmin/Helpdesk-Staff-Menu/blob/master/Advanced%20Menu%20Screenshot.png?raw=true)
 
 ## INSTALLATION
 Create this script in a folder accessible to all those who need to use it. <br />
