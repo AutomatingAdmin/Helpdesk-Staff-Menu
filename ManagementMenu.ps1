@@ -18,8 +18,6 @@ If ($numDashes -is [double]) {
 	$leftDashes = $numDashes
 	$rightDashes = $numDashes
 }
-
-
 $advHeader = "-"*$leftDashes + $advTitle + "-"*$rightDashes
 
 # Build paths
