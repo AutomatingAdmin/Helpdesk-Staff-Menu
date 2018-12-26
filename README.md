@@ -5,6 +5,7 @@ There is also a choice for an advanced menu, useful for scripts that are used le
 <br />
 ##### Main menu example
 ![Main Menu Example](https://github.com/AutomatingAdmin/Helpdesk-Staff-Menu/blob/master/screenshots/Main%20Menu%20Screenshot.png?raw=true)
+![File Structure](https://github.com/AutomatingAdmin/Helpdesk-Staff-Menu/blob/master/screenshots/structure.png?raw=true)
 <br />
 ##### Advanced menu example
 ![Advanced Menu Example](https://github.com/AutomatingAdmin/Helpdesk-Staff-Menu/blob/master/screenshots/Advanced%20Menu%20Screenshot.png?raw=true)
