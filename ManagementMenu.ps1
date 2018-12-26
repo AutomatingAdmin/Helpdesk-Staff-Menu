@@ -11,16 +11,14 @@ $mmHeader = "-"*25 + $title + "-"*25
 # Create the advanced menu header to match width of main menu header
 # compensating for a length that has an odd number of characters
 $numDashes = ($mmHeader.length - $advTitle.Length) / 2
-If($numDashes -is [double]){
+If ($numDashes -is [double]) {
 	$leftDashes = [math]::Floor($numDashes)
-}Else{
-	$leftDashes = $numDashes
-}
-If($numDashes -is [double]){
 	$rightDashes = [math]::Floor($numDashes) +1
-}Else{
+}Else {
+	$leftDashes = $numDashes
 	$rightDashes = $numDashes
 }
+
 
 $advHeader = "-"*$leftDashes + $advTitle + "-"*$rightDashes
 
