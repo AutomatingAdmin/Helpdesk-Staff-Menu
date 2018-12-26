@@ -14,7 +14,7 @@ $numDashes = ($mmHeader.length - $advTitle.Length) / 2
 If ($numDashes -is [double]) {
 	$leftDashes = [math]::Floor($numDashes)
 	$rightDashes = [math]::Floor($numDashes) +1
-}Else {
+} Else {
 	$leftDashes = $numDashes
 	$rightDashes = $numDashes
 }
