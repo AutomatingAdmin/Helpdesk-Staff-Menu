@@ -1,7 +1,28 @@
 Clear-Host
 
 # Title for your menu system
-$title = "Helpdesk Menu"
+$title = " Helpdesk Menu "
+# Advanced menu title
+$advTitle = " Advanced Menu "
+
+# Main meanu header
+$mmHeader = "-"*25 + $title + "-"*25
+
+# Create the advanced menu header to match width of main menu header
+# compensating for a length that has an odd number of characters
+$numDashes = ($mmHeader.length - $advTitle.Length) / 2
+If($numDashes -is [double]){
+	$leftDashes = [math]::Floor($numDashes)
+}Else{
+	$leftDashes = $numDashes
+}
+If($numDashes -is [double]){
+	$rightDashes = [math]::Floor($numDashes) +1
+}Else{
+	$rightDashes = $numDashes
+}
+
+$advHeader = "-"*$leftDashes + $advTitle + "-"*$rightDashes
 
 # Build paths
 $scripts = Split-Path -parent $PSCommandPath
@@ -14,7 +35,7 @@ $scripts = Split-Path -parent $PSCommandPath
 Function mainMenu {
 	Clear-Host
 	# Main Menu Header
-	Write-Host "------------------------ $title ------------------------"`n -foregroundcolor green -backgroundcolor darkgray
+	Write-Host $mmHeader -foregroundcolor green -backgroundcolor darkgray
 	# Check if the MainMenu folder contains any scripts
 	If ($mmFiles) {
 		# Build the menu choices based on all .ps1 files found in $mmFiles
@@ -43,8 +64,8 @@ Function mainMenu {
 Function advancedMenu {
 	Clear-Host
 	# Advanced Menu Header
-	Write-Host "------------------------ $title ------------------------" -foregroundcolor green -backgroundcolor darkgray
-	Write-Host "--------------------------- Advanced  Menu ---------------------------" -foregroundcolor gray -backgroundcolor red
+	Write-Host $mmHeader -foregroundcolor green -backgroundcolor darkgray
+	Write-Host $advHeader -foregroundcolor gray -backgroundcolor red
 	
 	# Check if the advanced folder contains any scripts
 	If ($advFiles) {
