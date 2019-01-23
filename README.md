@@ -19,7 +19,7 @@ Copy or create all .ps1 files youd like to be accessible through this menu in ei
 Call this script to load the main menu. <br />
 For helpdesk staff its advisable to have them create an alias to this in their PowerShell profile.<br />
 Any .ps1 files that contain the word "test" anywhere in their filename will not be displayed in the menu.<br />
-This is helpful if you want to test scripts where they will be living before making them avaialble to users.<br />
+This is helpful if you want to test scripts where they will be living before making them available to users.<br />
 Though if you need to use the word test in your filename you can change it in the following line for the `$mmFiles` and `$advFiles` variables.<br />
 ```powershell
   get-childItem $scripts\MainMenu | where {($_.name -like "*.ps1") -and (-not($_.basename -like "*test*"))}
